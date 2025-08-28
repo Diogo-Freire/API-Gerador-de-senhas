@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import random
 import string
 from flasgger import Swagger
+import os
 
 app = Flask(__name__)
 swagger = Swagger(app)  # Inicializa o Swagger
@@ -90,5 +91,7 @@ def api_gerar_senha():
         return jsonify({"erro": str(e)}), 400
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    # Só roda o servidor de desenvolvimento localmente
+    port = int(os.environ.get('PORT', 5000))  # Usa PORT do Railway ou 5000 local
+    app.run(host='0.0.0.0', port=port, debug=True)  # Debug para teste local
