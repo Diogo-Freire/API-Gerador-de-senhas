@@ -91,7 +91,7 @@ def api_gerar_senha():
         return jsonify({"erro": str(e)}), 400
 
 
-if __name__ == '__main__':
-    # Só roda o servidor de desenvolvimento localmente
-    port = int(os.environ.get('PORT', 5000))  # Usa PORT do Railway ou 5000 local
-    app.run(host='0.0.0.0', port=port, debug=True)  # Debug para teste local
+#if __name__ == '__main__':
+    # Só roda em desenvolvimento local
+#    port = int(os.environ.get('PORT', 5000))  # Porta padrão 5000 localmente
+    #app.run(host='0.0.0.0', port=port, debug=True)
