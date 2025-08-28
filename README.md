@@ -1,4 +1,4 @@
-#🔑API gerador de Senhas 
+🔑#API gerador de Senhas 
 
 Este é um mini projeto de estudo que implementa uma API web em Flask com endpoints personalizados para geração de senhas fortes e reset de senha, incluindo documentação automática via Swagger. 
 O objetivo é praticar desenvolvimento de APIs RESTful, segurança básica e deploy em nuvem.
@@ -12,7 +12,9 @@ A API permite:
 
 **Demonstração**
 Acesse a API ao vivo:
+
 👉 Interface web: **https://api-gerador-de-senhas-production.up.railway.app/**
+
 👉 Documentação Swagger: **https://api-gerador-de-senhas-production.up.railway.app/apidocs/**
 
 **Tecnologias Utilizadas**
